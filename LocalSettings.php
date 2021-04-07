@@ -30,7 +30,7 @@ $wgMetaNamespace = "Cyclistie-demo";
 $wgScriptPath = "";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "https://mediawiki-cyclistie.herokuapp.com";
+$wgServer = "https://cyclistwiki.gingertechie.com";
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
