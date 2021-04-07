@@ -133,4 +133,4 @@ $wgDefaultSkin = "Liberty";
 # End of automatically generated settings.
 # Add more configuration options below.
 $wgLibertyMainColor = '#008000';
-$wgLibertyOgLogo = 'https://cyclist.ie/wp-content/uploads/2015/09/Cyclist.ie-Logo-340x240.png';
+$wgLogo = '/images/logo.png';
