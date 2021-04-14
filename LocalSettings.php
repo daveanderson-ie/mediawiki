@@ -136,3 +136,23 @@ $wgLibertyMainColor = '#008000';
 $wgMedikColor = '#008000';
 $wgLogo = '/images/logo.png';
 $wgMedikShowLogo = 'main';
+
+# Use AWS S3 for images
+wfLoadExtension( 'AWS' );
+
+// Configure AWS credentials.
+// THIS IS NOT NEEDED if your EC2 instance has an IAM instance profile.
+$wgAWSCredentials = [
+	'key' => getenv("S3_ACCESS_KEY"),
+	'secret' => getenv("S3_ACCESS_SECRET"),
+	'token' => false
+];
+
+$wgAWSRegion = 'eu-west-1'; # Northern Virginia
+
+// Replace <something> with the name of your S3 bucket, e.g. wonderfulbali234.
+$wgAWSBucketName = "mediawiki-demo";
+
+// if your images are stored in directory called "some_prefix"
+// you can specify an optional prefix
+// $wgAWSBucketTopSubdirectory="/images";
