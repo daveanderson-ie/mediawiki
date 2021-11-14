@@ -137,6 +137,9 @@ $wgMedikColor = '#008000';
 $wgLogo = '/images/logo.png';
 $wgMedikShowLogo = 'main';
 
+# Markdown is for nerds
+wfLoadExtension( 'VisualEditor' );
+
 # Use AWS S3 for images
 wfLoadExtension( 'AWS' );
 
